@@ -4,7 +4,7 @@
 
 ## 1. Lab Overview
 
-In the real world, when an organisation builds software — a banking app, a hospital management system, an e-commerce site — that software contains *thousands* of lines of code written by many people, often under time pressure. Hidden inside that code can be **security weaknesses**: small mistakes that attackers can exploit to steal data, take over accounts, or bring the system down.
+In the real world, when an organisation builds software, a banking app, a hospital management system, an e-commerce site, that software contains *thousands* of lines of code written by many people, often under time pressure. Hidden inside that code can be **security weaknesses**: small mistakes that attackers can exploit to steal data, take over accounts, or bring the system down.
 
 In this lab, you will take a real codebase, run an automated security scanner over it, examine what the scanner finds, and decide which of those findings are the *most important* problems that must be fixed first. You will then produce a short professional report explaining your work.
 
@@ -20,7 +20,7 @@ By the end of this lab, you will be able to:
 3. Read and interpret a security scan report.
 4. Distinguish a genuine security issue from a *false positive*.
 5. Prioritise security findings using severity and exploitability.
-6. Write a professional security finding report suitable for a development team.
+6. Write a security finding report suitable for a development team.
 
 ---
 
@@ -97,7 +97,7 @@ You may use **any** SAST tool. Free / student-friendly options include:
 You have **two options**.
 
 ### Option A — Use Your Own Project Repository
-If you already have a coursework or capstone project on GitHub, scan that. This is the more valuable option because the findings are real and actionable.
+If you already have sufficient code in your project repo, please use it. This is the more valuable option because the findings are real and actionable.
 
 ### Option B — Use the Provided Vulnerable Repository
 If you do not have a suitable project, use **OWASP NodeGoat**, a deliberately vulnerable Node.js application maintained by the Open Worldwide Application Security Project:
@@ -105,18 +105,14 @@ If you do not have a suitable project, use **OWASP NodeGoat**, a deliberately vu
 > **Repository:** <https://github.com/OWASP/NodeGoat>
 > Clone it with: `git clone https://github.com/OWASP/NodeGoat.git`
 
-Alternative deliberately vulnerable repos (pick whichever matches a language you're comfortable with):
+Alternative repos:
 - **OWASP WebGoat** (Java) — <https://github.com/WebGoat/WebGoat>
 - **DVWA** (PHP) — <https://github.com/digininja/DVWA>
 - **OWASP Juice Shop** (Node.js / TypeScript) — <https://github.com/juice-shop/juice-shop>
 
-These repos are *meant* to contain vulnerabilities, so your SAST tool will produce a rich, varied set of findings to work with.
-
 ---
 
 ## 6. Lab Tasks (Step by Step)
-
-> Take a screenshot at every step marked with — you will need them for your report.
 
 ### Task 1 — Prepare Your Workspace
 1. Create a folder on your machine called `sast-lab`.
@@ -191,8 +187,6 @@ Submit a short PDF (5–10 pages) containing:
    - Why it is **not** a false positive (use the checklist from Task 6)
 
 **6. Reflection (½ page)** — In your own words: What did you learn? Were you surprised by anything? How would SAST fit into a real software development process at a company?
-
-**7. Appendix** — Full scan output file (or representative extract) and any extra screenshots.
 
 ---
 
