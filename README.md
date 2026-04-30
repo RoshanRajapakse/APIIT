@@ -116,17 +116,17 @@ These repos are *meant* to contain vulnerabilities, so your SAST tool will produ
 
 ## 6. Lab Tasks (Step by Step)
 
-> Take a screenshot at every step marked with 📸 — you will need them for your report.
+> Take a screenshot at every step marked with — you will need them for your report.
 
 ### Task 1 — Prepare Your Workspace
 1. Create a folder on your machine called `sast-lab`.
-2. Inside it, clone the repository you chose (yours or NodeGoat). 📸 *Screenshot of the cloned folder.*
+2. Inside it, clone the repository you chose (yours or NodeGoat). *Screenshot of the cloned folder.*
 3. Open it in any code editor (VS Code recommended).
 
 ### Task 2 — Choose and Install a SAST Tool
 1. Pick **one** tool from Section 4.
 2. Install it following the official instructions on the tool's website.
-3. Verify it is installed by running its `--version` (or equivalent) command. 📸 *Screenshot of version output.*
+3. Verify it is installed by running its `--version` (or equivalent) command. *Screenshot of version output.*
 
 ### Task 3 — Run the Scan
 1. Run the tool against your chosen codebase. Example commands:
@@ -134,7 +134,7 @@ These repos are *meant* to contain vulnerabilities, so your SAST tool will produ
    - Bandit (Python): `bandit -r ./your_project`
    - Snyk Code: `snyk code test`
 2. Wait for the scan to complete. Some scans take 1–2 minutes; cloud scans may take longer.
-3. 📸 *Screenshot of the scan running and the summary at the end (number of issues found, severity breakdown).*
+3. *Screenshot of the scan running and the summary at the end (number of issues found, severity breakdown).*
 
 ### Task 4 — Export the Full Output
 1. Save the full scan report as a file. Most tools support `--json`, `--sarif`, or HTML output. Examples:
@@ -149,7 +149,7 @@ These repos are *meant* to contain vulnerabilities, so your SAST tool will produ
    - **Title** of the issue (e.g., "SQL Injection in `login.js`")
    - **File path and line number**
    - **Severity rating** as reported by the tool
-   - **The vulnerable code snippet** (📸 screenshot or copy-paste)
+   - **The vulnerable code snippet** (screenshot or copy-paste)
    - **A plain-English description** of what the problem is
    - **What an attacker could do** if it is exploited
    - **A suggested fix**
